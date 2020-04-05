@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* nav */
+
+.diy-nav {
+    background-color: #fb8a09;
+    opacity: 0.9;
+    border: none;
+}
+
+.diy-nav:first-child #diy-brand a,
+#nav-li a,
+#nav-li2>li>a {
+    color: #222222;
+}
+
+#diy-brand a:hover,
+#nav-li a:hover,
+#nav-li2>li>a:hover {
+    color: #fff;
+}
+
+
+/* banner */
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../images/三只松鼠banner.jpg) no-repeat;
+    width: 100%;
+    height: 500px;
+}
+
+.diy-search {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    padding: 5%;
+    margin-top: 50px;
+    background-color: #dfd0a7b2
+}
+
+#input-search {
+    width: 300px;
+}
+
+#btn-search {
+    width: 300px;
+    margin-top: 10%;
+}
+
+
+/* 媒体查询 */
+
+@media screen and (max-width: 767px) {
+    #input-search,
+    #btn-search {
+        width: 250px;
+    }
+    .diy-search {
+        padding: 1%;
+        width: 90%;
+    }
+    #banner {
+        background-size: cover;
+        background-position: center 0;
+        background-repeat: no-repeat;
+        background-attachment: cover;
+        -webkit-background-size: cover;
+    }
+}
+
+
+/* hot */
+
+.hot p,
+.recommend p {
+    font-size: 24px;
+}
+
+.hot span {
+    color: red;
+}
+
+.hot-line,
+.recommend-line {
+    height: 2px;
+    background: #fb8a09;
+}
+
+
+/* 轮播图 */
+
+.carousel .item {
+    height: 500px;
+}
+
+
+/* footer */
+
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90px;
+    width: 100%;
+    background: #222222;
+}
+
+.footer-copyright p,
+.footer-copyright a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    color: orange;
+}
